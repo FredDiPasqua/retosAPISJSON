@@ -15,9 +15,8 @@ function traerAPI (pag) {
     .then(data => {
         pag.innerHTML = `
         <a href="${data.message}" target="_blank">
-            <img class="rounded mx-auto d-block" width=500 height=260 src="${data.message}" style="object-fit:cover" alt="wtf">
+            <img class="rounded mx-auto d-block" width=500 height=260 src="${data.message}" style="object-fit:cover" alt="...">
         </a>
         `
     })
 }
-document.getElementById("next").addEventListener("click", load);
